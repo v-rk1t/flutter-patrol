@@ -26,3 +26,10 @@ flutter:
   assets:
     - assets/icon/
     - assets/image/
+
+patrol:
+  app_name: Patrol Basics Tutorial
+  android:
+    package_name: com.resocoder.patrol_basics_tutorial
+  ios:
+    bundle_id: com.resocoder.patrolBasicsTutorial
