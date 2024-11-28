@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:patrol_basics_tutorial/pages/home_page.dart';
+import 'package:patrol_basics_tutorial/pages/integration_test_keys.dart';
 import 'package:patrol_basics_tutorial/ui/icons.dart';
 
 const emailRegex =
@@ -22,6 +23,7 @@ class SignInPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               TextFormField(
+                key: keys.signInPage.emailTextField,
                 decoration: const InputDecoration(
                   labelText: 'Email',
                 ),
@@ -34,6 +36,7 @@ class SignInPage extends StatelessWidget {
               ),
               const SizedBox(height: 16),
               TextFormField(
+                key: keys.signInPage.passwordTextField,
                 decoration: const InputDecoration(
                   labelText: 'Password',
                 ),
@@ -50,6 +53,7 @@ class SignInPage extends StatelessWidget {
               const SizedBox(height: 16),
               Builder(builder: (context) {
                 return ElevatedButton(
+                  key: keys.signInPage.signInButton,
                   onPressed: () {
                     if (Form.of(context).validate()) {
                       Navigator.of(context).push(

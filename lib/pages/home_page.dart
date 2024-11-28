@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter_timezone/flutter_timezone.dart';
+import 'package:patrol_basics_tutorial/pages/integration_test_keys.dart';
 import 'package:patrol_basics_tutorial/ui/images.dart';
 import 'package:patrol_basics_tutorial/ui/style/colors.dart';
 import 'package:permission_handler/permission_handler.dart';
@@ -99,6 +100,7 @@ class _HomePageState extends State<HomePage> {
         title: const Text('Home'),
         actions: [
           IconButton(
+            key: keys.homePage.notificationIcon,
             icon: const Icon(Icons.notification_add),
             onPressed: () {
               triggerLocalNotification(
@@ -106,8 +108,9 @@ class _HomePageState extends State<HomePage> {
                   // Will show a snackbar only when the app is not killed and when we also
                   // remain on the HomePage before the notification is tapped.
                   ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(
-                      content: Text('Notification was tapped!'),
+                    SnackBar(
+                      key: keys.homePage.successSnackbar,
+                      content: const Text('Notification was tapped!'),
                     ),
                   );
                 },
