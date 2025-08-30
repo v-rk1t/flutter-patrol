@@ -15,17 +15,17 @@ _Be prepared for **real** app development_
 
 ## Prerequisite
 
-xcode - https://developer.apple.com/xcode/
-android studio - https://developer.android.com/studio
-flutter SDK - https://docs.flutter.dev/get-started/install
-cocoapods - https://guides.cocoapods.org/using/getting-started.html
-patrol - https://patrol.leancode.co/documentation
+- xcode: https://developer.apple.com/xcode/
+- android studio: https://developer.android.com/studio
+- flutter SDK: https://docs.flutter.dev/get-started/install
+- cocoapods: https://guides.cocoapods.org/using/getting-started.html
+- patrol: https://patrol.leancode.co/documentation
 
 ## to run tests
-check flutter conditions: flutter doctor
-check patrol conditions: patrol doctor
-clean previous build: flutter clean
-build iOS simulator: flutter build ios --simulator
-open an iOS simulator: open -a Simulator
-running with no install: patrol test -t integration_test/app_test.dart --no-uninstall
-running with specific device: patrol test --target integration_test/app_test.dart -d "iPhone 16 Plus"
+- check flutter conditions: flutter doctor
+- check patrol conditions: patrol doctor
+- clean previous build: flutter clean
+- build iOS simulator: flutter build ios --simulator
+- open an iOS simulator: open -a Simulator
+- running with no install: patrol test -t integration_test/app_test.dart --no-uninstall
+- running with specific device: patrol test --target integration_test/app_test.dart -d "iPhone 16 Plus"
