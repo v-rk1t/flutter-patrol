@@ -127,7 +127,10 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
       body: Center(
-        child: PTImages.patrolLogo,
+        child: KeyedSubtree(
+          key: keys.homePage.patrolLogo,
+          child: PTImages.patrolLogo,
+        ),
       ),
     );
   }

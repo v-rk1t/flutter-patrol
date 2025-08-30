@@ -9,6 +9,7 @@ class SignInPageKeys {
 class HomePageKeys {
   final notificationIcon = const Key('notificationIcon');
   final successSnackbar = const Key('successSnackbar');
+  final patrolLogo = const Key('patrolLogo');
 }
 
 class Keys {
